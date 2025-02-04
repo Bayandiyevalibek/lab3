@@ -1,12 +1,13 @@
-def solve(numheads, numlegs):
-    rabbits = (numlegs - 2 * numheads) // 2
-    chickens = numheads - rabbits
-    
-    if rabbits >= 0 and chickens >= 0 and 2 * chickens + 4 * rabbits == numlegs:
-        return chickens, rabbits
-    else:
-        return "ERROR"
+class Shape:
+    def area():
+        return 0
 
-heads = int(input())
-legs = int(input())
-print(solve(heads, legs))
+class Rectangle:
+    def __init__ (self,length,width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length * self.width
+    
+rectangle = Rectangle(5,6)
+print(rectangle.area())

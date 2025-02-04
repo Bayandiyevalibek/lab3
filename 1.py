@@ -1,5 +1,8 @@
-def gram_to_ounces(gram):
-    return gram / 28.3495231
+class stringP:
+  def __init__(self):
+    self.name = "Hello world"
+  def printstring(self):
+    print(self.name.upper())
 
-gram = float(input("Введите грам: "))
-print(gram_to_ounces(gram))
+processor = stringP()
+processor.printstring()

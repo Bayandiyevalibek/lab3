@@ -1,5 +1,15 @@
-def celci(f):
-    return (f-32)* 5/9
+class Shape:
+    def area(self):
+        return 0
 
-f = float(input())
-print(celci(f))
+class Square:
+    def __init__(self,length):
+        self.lenght = length
+    def area(self):
+        return self.lenght ** 2
+    
+shape = Shape()
+square = Square(5)
+
+print(shape.area())
+print(square.area())
